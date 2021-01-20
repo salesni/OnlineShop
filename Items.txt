@@ -1,0 +1,71 @@
+/*Ficcion*/
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Gran Gatsby',267,1,5,'https://images-na.ssl-images-amazon.com/images/I/51y20JJAvIL._SX311_BO1,204,203,200_.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Juegos del hambre',460,1,5,'https://static.wikia.nocookie.net/thehungergames/images/c/c8/Los_Juegos_del_Hambre.jpg/revision/latest/scale-to-width-down/340?cb=20120729153253&path-prefix=es');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Rebelion en la granja',149,1,1,'https://kbimages1-a.akamaihd.net/3805f481-a1b4-4c1b-9f51-2bb0a8c85daa/1200/1200/False/rebelion-en-la-granja-8.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Un mundo feliz',321,1,5,'https://images-na.ssl-images-amazon.com/images/I/81lB36lG5hL.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Fahrenheit 451',240,1,5,'https://cdn.shopify.com/s/files/1/0006/6060/2935/products/hborl73319_1200x1200.jpg?v=1527752588');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Dune',450,1,5,'https://images-na.ssl-images-amazon.com/images/I/412b7kAJE2L._SX277_BO1,204,203,200_.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('El señor de las moscas',156,1,5,'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSAB3IaaJ_V_MPLOqnQ8vRg4igyHROpLvOfAg&usqp=CAU');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Batallas en el desierto',367,1,5,'https://images-na.ssl-images-amazon.com/images/I/71f+UzEuVJL.jpg');
+
+/*Fantasia*/
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Juego de tronos',267,2,5,'https://www.planetadelibros.com.mx/usuaris/libros/fotos/206/m_libros/205538_juego-de-tronos-n-02_9788415480396.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Eragon',460,2,5,'https://www.cuestalibros.com/content/images/thumbs/0013159_6133205-h.jpg_550.jpeg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('El nombre del viento',560,2,1,'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3XcYyAY50opnasj9jF9XKdzKuSWJfsrYqcA&usqp=CAU');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('El hobbit',321,2,5,'https://images.cdn3.buscalibre.com/fit-in/360x360/52/84/5284380ecad146d92d6ef4114085c6da.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Narnia, saga completa',1200,2,5,'https://i.ytimg.com/vi/N_WItCnl4_M/maxresdefault.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Harry Potter, saga completa',1098,2,5,'https://elreyenelnorte.com/wp-content/uploads/2019/04/Captura-de-pantalla-2019-04-19-a-las-16.50.39-min.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('La brujula dorada',246,2,2,'https://www.minceraft.cl/media/k2/items/cache/07cc226364ad82ab969b3487d13db8ea_XL.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('El bosque de los pigmeos',367,2,3,'https://images-na.ssl-images-amazon.com/images/I/911NgAYExNL.jpg');
+
+/*Terror*/
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Cujo',159,3,5,'https://imagessl6.casadellibro.com/a/l/t5/86/9788497595186.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Carrie',460,3,5,'https://loresumo.com/wp-content/uploads/2020/01/carrie1-789x1024.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Frankestein',560,3,1,'https://www.elsotano.com/imagenes_grandes/9786071/978607141116.JPG');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Dracula',321,3,5,'https://ih1.redbubble.net/image.497357846.1091/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Dr Jenkyll & Mr Hyde',240,3,5,'https://www.planetadelibros.com/usuaris/libros/fotos/92/m_libros/el-extrano-caso-del-dr-jekyll-y-mr-hyde-olalla_9788467025415.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('El Exorcista',450,3,5,'https://images-na.ssl-images-amazon.com/images/I/41-SFZ39tlL._SX343_BO1,204,203,200_.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Fausto',156,3,2,'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNqLtNf3P1Dx4jjlVl-D92VwwTFE8Ot3kJCQ&usqp=CAU');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('La carretera maldita',367,3,3,'https://2.bp.blogspot.com/-XWC5KRP2Ew0/UGO7eGCGY5I/AAAAAAAAFQw/ouVBLf28Nqg/s1600/3168522.jpg');
+
+/*Romantico*/
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Orgullo y prejuicio',267,4,5,'https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/9786079823382.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Hush Hush',460,4,5,'https://kbimages1-a.akamaihd.net/6beadf63-8ed4-4584-b915-44630cbb91e8/353/569/90/False/the-complete-hush-hush-saga-hush-hush-crescendo-silence-finale.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Crepusculo',560,4,1,'https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/3090962.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('50 sombras de Grey',321,4,5,'https://http2.mlstatic.com/libro-50-sombras-de-grey-D_NQ_NP_702979-MLM42394495999_062020-F.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Bajo la misma estrella',460,4,5,'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBCVmVrOrDHpRq3gCxQNNGbNGDuOzBtzHoaA&usqp=CAU');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Anna Karenina',560,4,1,'https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/9786071136527.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Amanecer',321,4,5,'https://i.pinimg.com/originals/2e/c6/52/2ec652fbcabddaac11f8c033258448ec.jpg');
+
+/*Crimen*/
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Sherlock Holmes',267,5,5,'https://www.plutonediciones.com/tienda/wp-content/uploads/2019/05/sherlock.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('The Alienist',460,5,5,'https://images-na.ssl-images-amazon.com/images/I/91eg2tnW58L.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('El Psicoanalista',560,5,1,'https://images.penguinrandomhouse.com/cover/9781947783492');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Asesinato en el Orient Express',321,5,5,'https://www.planetadelibros.com/usuaris/libros/fotos/201/m_libros/portada_asesinato-en-el-orient-express_agatha-christie_201505291004.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('La búsqueda del asesino',560,5,1,'https://www.librosdemario.com/covers/05/11/05/cover.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Asesino real',321,5,5,'https://www.elsotano.com/imagenes_grandes/9786073/978607312381.JPG');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Cuello blanco',321,5,5,'https://imagessl3.casadellibro.com/a/l/t5/33/9786073115933.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Tiempo de alacranes',321,5,5,'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1384205687l/6695071.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Hielo negro',321,5,5,'https://http2.mlstatic.com/D_NQ_NP_694874-MLM42668204960_072020-O.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Pieza Única',321,5,5,'https://www.elsotano.com/imagenes/9786077/978607778119.JPG'); 
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('La chica del tren',321,5,5,'https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/9786070728389_2.jpg');
+
+/*Infantiles*/
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Diario de Greg',267,6,5,'https://static.fnac-static.com/multimedia/Images/ES/NR/4d/c9/53/5491021/1540-1.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('La telaraña de Charlotte',460,6,5,'https://http2.mlstatic.com/D_NQ_NP_943082-MLM27425879076_052018-W.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('El gato en el sombrero',560,6,1,'https://elloboilustrado.es/wp-content/uploads/2018/06/el-gato-en-el-sombrero-Dr-Seuss.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Alicia en el país de las maravillas',321,6,5,'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTCtJL9pIUirQPRXLvqkSZHBtSm1hyAUtsaUA&usqp=CAU');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('El Grinch',240,6,5,'https://cdn.gandhi.com.mx/media/catalog/product/cache/1/image/370x/9df78eab33525d08d6e5fb8d27136e95/9/7/9781880507735.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Donde viven los monstros',450,6,5,'https://pictures.abebooks.com/LDESVAN/30328655910.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Huevos verdes con jamon',156,6,4,'https://images-na.ssl-images-amazon.com/images/I/714SEByKxJL.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('James y el durazno gigante',367,6,3,'https://www.elsotano.com/imagenes_grandes/9786070/978607012376.JPG');
+
+/*Biografias*/
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('A Beautiful Mind ',267,7,5,'https://upload.wikimedia.org/wikipedia/en/d/da/A_Beautiful_Mind_%28book%29.JPG');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Alan Turing: The Enigma',460,7,5,'https://images-na.ssl-images-amazon.com/images/I/51+JjTOBZhL._SX310_BO1,204,203,200_.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Alexander Hamilton',560,7,5,'https://www.pasajeslibros.com/static/img/portadas/_visd_0001JPG0DL2C.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Churchill: A Life',321,7,5,'https://imagessl6.casadellibro.com/a/l/t5/06/9780795342806.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Radioactive: Marie & Pierre Curie: A Tale of Love and Fallout',240,7,5,'https://images-na.ssl-images-amazon.com/images/I/51kgblXguFL._AC_SY400_.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Steve Jobs',450,7,5,'https://images-na.ssl-images-amazon.com/images/I/61Jievvc5WL.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('Unbroken: A World War II Story of Survival, Resilience, and Redemption',156,7,5,'https://images-na.ssl-images-amazon.com/images/I/91UmKFGfyYL.jpg');
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia,image_url) VALUES ('My Story: Michelle Obama',367,7,5,'https://m.media-amazon.com/images/I/410wEnVBiKL.jpg');

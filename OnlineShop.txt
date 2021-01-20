@@ -1,0 +1,114 @@
+CREATE database OnlineShop;
+USE OnlineShop;
+CREATE TABLE `categorias` (
+  `id_categorias` int NOT NULL auto_increment,
+  `descripcion` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_categorias`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `productos` (
+  `id_productos` int NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(45) DEFAULT NULL,
+  `precio` double DEFAULT NULL,
+  `id_categorias` int DEFAULT NULL,
+  `existencia` int DEFAULT NULL,
+  `image_url` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`id_productos`),
+  KEY `id_categorias_idx` (`id_categorias`),
+  CONSTRAINT `id_categorias` FOREIGN KEY (`id_categorias`) REFERENCES `categorias` (`id_categorias`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `registros_usuario` (
+  `id_usuarios` int NOT NULL auto_increment,
+  `name` varchar(45) DEFAULT NULL,
+  `lastname` varchar(45) DEFAULT NULL,
+  `mail` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `monedero` double DEFAULT NULL,
+  `usuario_tipo` int DEFAULT NULL,
+  PRIMARY KEY (`id_usuarios`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `compras` (
+  `id_compras` int NOT NULL auto_increment,
+  `id_usuarios` int DEFAULT NULL,
+  PRIMARY KEY (`id_compras`),
+  KEY `id_usuarios_idx` (`id_usuarios`),
+  CONSTRAINT `id_usuarios` FOREIGN KEY (`id_usuarios`) REFERENCES `registros_usuario` (`id_usuarios`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `detalles` (
+
+  `id_detalles` int NOT NULL auto_increment,
+  `id_compras` int DEFAULT NULL,
+  `id_productos` int DEFAULT NULL,
+  `cantidad` int DEFAULT NULL,
+  PRIMARY KEY (`id_detalles`),
+  KEY `id_compras_idx` (`id_compras`),
+  KEY `id_productos_idx` (`id_productos`),
+  CONSTRAINT `id_productos` FOREIGN KEY (`id_productos`) REFERENCES `productos` (`id_productos`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `id_compras` FOREIGN KEY (`id_compras`) REFERENCES `compras` (`id_compras`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `ticket` (
+  `id_ticket` int NOT NULL auto_increment,
+  `id_compras` int DEFAULT NULL,
+  `subtotal` double DEFAULT NULL,
+  `promocion1` double DEFAULT NULL,
+   `promocion2` double DEFAULT NULL,
+   `total` double DEFAULT NULL,
+  PRIMARY KEY (`id_ticket`),
+  KEY `id_compras_id2` (`id_compras`),
+  CONSTRAINT `id_compras2` FOREIGN KEY (`id_compras`) REFERENCES `compras` (`id_compras`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+ALTER TABLE onlineshop.productos ADD image_url VARCHAR(120) NULL;
+
+INSERT INTO OnlineShop.categorias (id_categorias, descripcion)VALUES (1, 'Ficcion');
+INSERT INTO OnlineShop.categorias (id_categorias, descripcion)VALUES (2, 'Fantasia');
+INSERT INTO OnlineShop.categorias (id_categorias, descripcion)VALUES (3, 'Terror');
+INSERT INTO OnlineShop.categorias (id_categorias, descripcion)VALUES (4, 'Romantico');
+INSERT INTO OnlineShop.categorias (id_categorias, descripcion)VALUES (5, 'Crimen');
+INSERT INTO OnlineShop.categorias (id_categorias, descripcion)VALUES (6, 'Infantiles');
+INSERT INTO OnlineShop.categorias (id_categorias, descripcion)VALUES (7, 'Biografias');
+
+
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia)VALUES ('La Biblia',666,3,1);
+INSERT INTO OnlineShop.productos (descripcion,precio,id_categorias,existencia)VALUES ('Hola',98222,3,1);
+INSERT INTO OnlineShop.registros_usuario (id_usuarios, name, lastname, mail, password, monedero, usuario_tipo) VALUES(1,'Pepe','Perez','ppperez@gmail.com','1234', 450.90,0);
+INSERT INTO OnlineShop.registros_usuario (id_usuarios, name, lastname, mail, password, monedero, usuario_tipo) VALUES(2,'Ana','Gomez','agomez@gmail.com','1234', 10000.00,1);
+INSERT INTO OnlineShop.compras (id_usuarios) VALUES(1);
+INSERT INTO OnlineShop.compras (id_usuarios) VALUES(1);
+
+
+INSERT INTO OnlineShop.ticket (id_compras, subtotal,promocion1, promocion2,total) VALUES(1,500,100,1,399);
+
+INSERT INTO OnlineShop.detalles (id_compras,id_productos,cantidad) VALUES(1,1,3);
+INSERT INTO OnlineShop.detalles (id_compras,id_productos,cantidad) VALUES(1,2,2);
+INSERT INTO OnlineShop.detalles (id_compras,id_productos,cantidad) VALUES(1,2,3);
+
+INSERT INTO OnlineShop.detalles (id_compras,id_productos,cantidad) VALUES(2,2,3);
+INSERT INTO OnlineShop.detalles (id_compras,id_productos,cantidad) VALUES(2,2,3);
+INSERT INTO OnlineShop.detalles (id_compras,id_productos,cantidad) VALUES(2,2,3);
+
+INSERT INTO OnlineShop.detalles (id_compras,id_productos,cantidad) VALUES(3,2,3);
+
+SELECT * FROM OnlineShop.categorias;
+SELECT * FROM OnlineShop.productos;
+SELECT * FROM OnlineShop.registros_usuario;
+SELECT * FROM OnlineShop.compras;
+SELECT * FROM OnlineShop.detalles;
+SELECT * FROM OnlineShop.ticket;
+
+Select OnlineShop.detalles.id_compras, OnlineShop.detalles.id_productos, 
+OnlineShop.detalles.cantidad from detalles where detalles.id_compras = 1;
+
+
+DROP TABLE onlineshop.ticket;
+DROP TABLE onlineshop.detalles;
+DROP TABLE onlineshop.compras;
+DROP TABLE onlineshop.registros_usuario;
+DROP TABLE onlineshop.productos;
+DROP TABLE onlineshop.categorias;
+
+
+
+
