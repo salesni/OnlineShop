@@ -1,0 +1,66 @@
+
+/*CSS Styles for login webpage*/
+body.login {
+    background-image: url("bg.jpeg");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+}
+
+
+  div.centre{
+    width: 450px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color:white;
+  }
+
+  /*CSS for Main's*/
+  body.main{
+    background-image: url("bg.jpeg");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    color:white;
+  }
+
+  
+
+
+/*CSS Styles for:
+  - CategoriasManager, 
+  - ProductManager, 
+  - Compras Manager, 
+  - User Register, 
+  - Ticket Manager
+  - UserCategories*/
+h1.header{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input.entrada{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.CatManager{
+
+  background-image: url("prueba3.jpg");
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  
+}
+
+button.main{
+  position:absolute;
+  bottom: 5%;
+  right:20%;
+}
+
+
+
+
+
